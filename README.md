@@ -5,3 +5,9 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/bvwells/gRPC-fun)](https://goreportcard.com/report/github.com/bvwells/gRPC-fun)
 
 Fun with gRPC
+
+Build Protobuffer API with:
+
+```
+docker run -it -v ${PWD}:/go/src/gRPC-fun -w /go/src/gRPC-fun bvwells/golang-proto protoc -I helloworld/ helloworld/hello-world.proto --go_out=plugins=grpc:helloworld
+```
