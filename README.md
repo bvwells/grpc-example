@@ -11,3 +11,9 @@ Build Protobuffer API with:
 ```
 docker run -it -v ${PWD}:/go/src/gRPC-fun -w /go/src/gRPC-fun bvwells/golang-proto protoc -I helloworld/ helloworld/hello-world.proto --go_out=plugins=grpc:helloworld
 ```
+
+Ensure go dependencies are up to date by running:
+
+```
+docker run -it -v ${PWD}:/go/src/gRPC-fun -w /go/src/gRPC-fun bvwells/golang-proto dep ensure -update -v
+```
