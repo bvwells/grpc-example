@@ -1,5 +1,3 @@
-github.com/bvwells/gRPC-fun v0.0.0-20180701093321-2b89a272aa23 h1:uOE1+vEOvQpsm+qEnEZ2WqJgTu2h/AAiQI0hS7G3oS0=
-github.com/bvwells/gRPC-fun v0.0.0-20180701093321-2b89a272aa23/go.mod h1:wlFL6zH7wrcCQ9hWnOgsfkH42qoH6jYiJ85rsJhuZp0=
 github.com/golang/protobuf v1.1.0 h1:0iH4Ffd/meGoXqF2lSAhZHt8X+cPgkfn/cb6Cce5Vpc=
 github.com/golang/protobuf v1.1.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 golang.org/x/net v0.0.0-20180629035331-4cb1c02c05b0 h1:eOjEPieBzQ+rKOvQTqwbkm/0BdWz2JQwUzaa97tcZ8k=
