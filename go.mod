@@ -1,9 +1,10 @@
-module github.com/bvwells/gRPC-fun
+module github.com/bvwells/grpc-example
+
+go 1.14
 
 require (
-	github.com/golang/protobuf v1.1.0
-	golang.org/x/net v0.0.0-20180629035331-4cb1c02c05b0
-	golang.org/x/text v0.3.0
-	google.golang.org/genproto v0.0.0-20180627194029-ff3583edef7d
-	google.golang.org/grpc v1.13.0
+	github.com/golang/protobuf v1.4.2
+	github.com/golangci/golangci-lint v1.27.0
+	google.golang.org/grpc v1.30.0
+	google.golang.org/protobuf v1.25.0
 )

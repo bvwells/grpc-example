@@ -1,17 +1,18 @@
 package main
 
 import (
+	"context"
 	"log"
 	"os"
 	"time"
 
-	"github.com/bvwells/gRPC-fun/helloworld"
-	"golang.org/x/net/context"
+	"github.com/bvwells/grpc-example/helloworld"
+
 	"google.golang.org/grpc"
 )
 
 const (
-	address     = "localhost:50051"
+	address     = "localhost:50000"
 	defaultName = "world"
 )
 

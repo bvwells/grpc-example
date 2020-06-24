@@ -1,25 +1,53 @@
-# gRPC-fun
-[![GoDoc](http://godoc.org/github.com/bvwells/gRPC-fun?status.svg)](http://godoc.org/github.com/bvwells/gRPC-fun)
-[![Build Status](https://travis-ci.org/bvwells/gRPC-fun.svg?branch=master)](https://travis-ci.org/bvwells/gRPC-fun)
-[![codecov](https://codecov.io/gh/bvwells/gRPC-fun/branch/master/graph/badge.svg)](https://codecov.io/gh/bvwells/gRPC-fun)
-[![Go Report Card](https://goreportcard.com/badge/github.com/bvwells/gRPC-fun)](https://goreportcard.com/report/github.com/bvwells/gRPC-fun)
+# grpc-example
+[![GoDoc](http://godoc.org/github.com/bvwells/grpc-example?status.svg)](http://godoc.org/github.com/bvwells/grpc-example)
+[![Build Status](https://travis-ci.org/bvwells/grpc-example.svg?branch=master)](https://travis-ci.org/bvwells/grpc-example)
+[![codecov](https://codecov.io/gh/bvwells/grpc-example/branch/master/graph/badge.svg)](https://codecov.io/gh/bvwells/grpc-example)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bvwells/grpc-example)](https://goreportcard.com/report/github.com/bvwells/grpc-example)
 
-Fun with gRPC
+This repository contains an example usage of gRPC based on the grpc quickstart example defined [here](https://grpc.io/docs/languages/go/quickstart/) and [here](https://github.com/grpc/grpc-go/blob/master/examples/helloworld/helloworld/helloworld.proto).
 
-Build docker image to generate and build client and server:
+## Install protoc
 
-```
-docker build -t golang-proto .
-```
-
-Build Protobuffer API with:
+Install protoc (https://github.com/protocolbuffers/protobuf)
 
 ```
-docker run -it -v ${PWD}:/go/src/gRPC-fun -w /go/src/gRPC-fun bvwells/golang-proto protoc -I helloworld/ helloworld/hello-world.proto --go_out=plugins=grpc:helloworld
+brew install protobuf
 ```
 
-Ensure go module dependencies are up to date by running:
+## Install tools
+
+To install the go protoc plugin run:
 
 ```
-docker run -it -v ${PWD}:/go/src/gRPC-fun -w /go/src/gRPC-fun bvwells/golang-proto go mod download
+$ go get -u github.com/golang/protobuf/protoc-gen-go
+```
+
+Ensure that $GOBIN is added to the path.
+
+```
+export PATH=$PATH:~/go/bin
+```
+
+## Generate client and server stubs
+
+```bash
+$ go generate ./...
+```
+
+## Run server
+
+To run the server:
+
+```bash
+$ cd server
+$ go run main.go
+```
+
+## Run client
+
+To run the server:
+
+```bash
+$ cd client
+$ go run main.go
 ```
