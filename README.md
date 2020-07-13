@@ -1,6 +1,10 @@
 # grpc-example
-[![GoDoc](http://godoc.org/github.com/bvwells/grpc-example?status.svg)](http://godoc.org/github.com/bvwells/grpc-example)
-[![Build Status](https://travis-ci.org/bvwells/grpc-example.svg?branch=master)](https://travis-ci.org/bvwells/grpc-example)
+
+
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/bvwells/grpc-example?tab=overview)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/bvwells/grpc-example)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bvwells/grpc-example) 
+[![Build Status](https://travis-ci.com/bvwells/grpc-example.svg?branch=master)](https://travis-ci.org/bvwells/grpc-example)
 [![codecov](https://codecov.io/gh/bvwells/grpc-example/branch/master/graph/badge.svg)](https://codecov.io/gh/bvwells/grpc-example)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bvwells/grpc-example)](https://goreportcard.com/report/github.com/bvwells/grpc-example)
 
